@@ -39,6 +39,9 @@ podAnnotations: {}
 podLabels: {
   test: test
 }
+extraLabels: {
+  test1: test1
+}
 
 podSecurityContext: {}
   # fsGroup: 2000
