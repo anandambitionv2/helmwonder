@@ -20,6 +20,8 @@ spec:
       labels:
         {{- include "my-rollout-app.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
         {{- with .Values.extraLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
